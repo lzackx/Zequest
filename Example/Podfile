@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Zequest_Example' do
+  pod 'Zequest', :path => '../'
+
+  target 'Zequest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module Pods_Zequest_Tests {
+  umbrella header "Pods-Zequest_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

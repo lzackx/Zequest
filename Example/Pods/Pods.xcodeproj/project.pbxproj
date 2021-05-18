@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46769C29D3DF1D3E0D0F0E8A12C144A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		55D04989192B2FFCB6F5D7951F132F06 /* Zequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34656D85BAAEF9CDFA03BFADCF29A0FD /* Zequest-dummy.m */; };
+		64E3B1AA1B40760AEADDFEEBB26ABF2C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501B5B3FC4341B91A14CFA4C2225E6A /* ReplaceMe.m */; };
+		76C4B0358BE9F123C0A978C461FD54DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8AA72694E5F881E47C956D7AE518D9F4 /* Zequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F1932BC32DC85E8AFD7EF38471C88B /* Zequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4BAEDD0ACAA429DC6C8603C8FC66AA1 /* Pods-Zequest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB63C50A5E90B29EB2E7CE8E242F4DE2 /* Pods-Zequest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2757DDFE5F6888B17ADA6619C0D5C93 /* Pods-Zequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 270310B807CB5B4A3ADA42D16172D1C1 /* Pods-Zequest_Example-dummy.m */; };
+		CC57D6355C3FB5CAF69CDB7AB5890CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E4E7500C359507BC3EF0BA26BC67C1A5 /* Pods-Zequest_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2D94A74794241DBDABD3E163C332E /* Pods-Zequest_Tests-dummy.m */; };
+		F39E1F944FD6FE6D53732ABF5D482874 /* Pods-Zequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3088CB71C97EF7F3A6D022784B1642C4 /* Pods-Zequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BC7E1CDECA95C3E4B9869E4D602509A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A2541BE0847B24D636ABB3B4661688E;
+			remoteInfo = "Pods-Zequest_Example";
+		};
+		EDE849C10E2F915ACA6C39D2332F9D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6422E7E1938F4B5D720743DA3AD19D46;
+			remoteInfo = Zequest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		084F6BBD4A94BE968E73B9687FDB8C81 /* Pods-Zequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0DA854CE0A2CF09F0D2E28E69BE4507F /* Pods-Zequest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Zequest_Example.modulemap"; sourceTree = "<group>"; };
+		11C25B3706E9A0B94D4D10F6ABF1C392 /* Zequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zequest.modulemap; sourceTree = "<group>"; };
+		127A6275A3F2394197C0F64F756D6B75 /* Zequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zequest.release.xcconfig; sourceTree = "<group>"; };
+		18BDCBF91A26DD804B92DAA3F823276D /* Zequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zequest-prefix.pch"; sourceTree = "<group>"; };
+		18BEABB18AD93DC46C2D4F0C80363307 /* Pods-Zequest_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Tests-Info.plist"; sourceTree = "<group>"; };
+		260DE828E03D1BB4B18EFDE7193B8896 /* Pods-Zequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		270310B807CB5B4A3ADA42D16172D1C1 /* Pods-Zequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zequest_Example-dummy.m"; sourceTree = "<group>"; };
+		3088CB71C97EF7F3A6D022784B1642C4 /* Pods-Zequest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zequest_Example-umbrella.h"; sourceTree = "<group>"; };
+		34656D85BAAEF9CDFA03BFADCF29A0FD /* Zequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zequest-dummy.m"; sourceTree = "<group>"; };
+		3939B58668FE68CFE7F631D7F09D2609 /* Zequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zequest.framework; path = Zequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4501B5B3FC4341B91A14CFA4C2225E6A /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Zequest/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		46C793DAB3780ECCF4C61CA2012AE569 /* Pods-Zequest_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zequest_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4ED2D94A74794241DBDABD3E163C332E /* Pods-Zequest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zequest_Tests-dummy.m"; sourceTree = "<group>"; };
+		55F1932BC32DC85E8AFD7EF38471C88B /* Zequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zequest-umbrella.h"; sourceTree = "<group>"; };
+		61005AC31651E15461C7454D8D3283A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9100379D60238A742BE4403FF3F3443E /* Zequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Zequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A99FBC7F07FD48E4C6BB4EDF2713F9BE /* Zequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zequest-Info.plist"; sourceTree = "<group>"; };
+		ABDF25BD37E045CD51746F6DFC1E8938 /* Pods-Zequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AE06321BE65816401576EFECB6D5525D /* Pods-Zequest_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B14E00B049638B267FFA215D7F6315BA /* Pods_Zequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zequest_Example.framework; path = "Pods-Zequest_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F539BB612BCFE0DA27A039D00AAFFD /* Pods_Zequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zequest_Tests.framework; path = "Pods-Zequest_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84E95A4269BCEFFADEC15188981E334 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BBC3AE566AFC77FA3D0BF2AE67BC645D /* Pods-Zequest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zequest_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C31A86CAD699B5E2068DD8A4119887B9 /* Pods-Zequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C71F0FD5FCEC06D6ACFFD93C0EC1C70B /* Pods-Zequest_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Zequest_Tests.modulemap"; sourceTree = "<group>"; };
+		CD190AB0A34A8752CFD198C3A7301F98 /* Pods-Zequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E8B954AAA188301CF0A9027891EE87 /* Zequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zequest.debug.xcconfig; sourceTree = "<group>"; };
+		EB63C50A5E90B29EB2E7CE8E242F4DE2 /* Pods-Zequest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zequest_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F294596BE0B10BA333C0886EEBB9F5B7 /* Pods-Zequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FFBEFE1E4001E21642ADC9DCC57BCD8B /* Pods-Zequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Example-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80CA32AD28D09407E0B90E35E9720541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C4B0358BE9F123C0A978C461FD54DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2564CAA5EEC026280898933DE317ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC57D6355C3FB5CAF69CDB7AB5890CDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC4CB6A45FA02701CCB4FC9ABA1C2C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46769C29D3DF1D3E0D0F0E8A12C144A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1646F7791129A0B0D09BC95410ED255F /* Pods-Zequest_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C71F0FD5FCEC06D6ACFFD93C0EC1C70B /* Pods-Zequest_Tests.modulemap */,
+				46C793DAB3780ECCF4C61CA2012AE569 /* Pods-Zequest_Tests-acknowledgements.markdown */,
+				AE06321BE65816401576EFECB6D5525D /* Pods-Zequest_Tests-acknowledgements.plist */,
+				4ED2D94A74794241DBDABD3E163C332E /* Pods-Zequest_Tests-dummy.m */,
+				18BEABB18AD93DC46C2D4F0C80363307 /* Pods-Zequest_Tests-Info.plist */,
+				EB63C50A5E90B29EB2E7CE8E242F4DE2 /* Pods-Zequest_Tests-umbrella.h */,
+				CD190AB0A34A8752CFD198C3A7301F98 /* Pods-Zequest_Tests.debug.xcconfig */,
+				084F6BBD4A94BE968E73B9687FDB8C81 /* Pods-Zequest_Tests.release.xcconfig */,
+			);
+			name = "Pods-Zequest_Tests";
+			path = "Target Support Files/Pods-Zequest_Tests";
+			sourceTree = "<group>";
+		};
+		1EF751AC64D6B6ABEA372ED45F5985C8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8134F43747425DCECBFC05D1DD3FAC3 /* Pods-Zequest_Example */,
+				1646F7791129A0B0D09BC95410ED255F /* Pods-Zequest_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6EDDCB3BDAA27765EEE0AC3BFE20E478 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11C25B3706E9A0B94D4D10F6ABF1C392 /* Zequest.modulemap */,
+				34656D85BAAEF9CDFA03BFADCF29A0FD /* Zequest-dummy.m */,
+				A99FBC7F07FD48E4C6BB4EDF2713F9BE /* Zequest-Info.plist */,
+				18BDCBF91A26DD804B92DAA3F823276D /* Zequest-prefix.pch */,
+				55F1932BC32DC85E8AFD7EF38471C88B /* Zequest-umbrella.h */,
+				E7E8B954AAA188301CF0A9027891EE87 /* Zequest.debug.xcconfig */,
+				127A6275A3F2394197C0F64F756D6B75 /* Zequest.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Zequest";
+			sourceTree = "<group>";
+		};
+		8A7567BA7F57431FA193C015C0328C84 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				994F9827FE9CE0475C3616797ACB02DD /* Zequest */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		994F9827FE9CE0475C3616797ACB02DD /* Zequest */ = {
+			isa = PBXGroup;
+			children = (
+				4501B5B3FC4341B91A14CFA4C2225E6A /* ReplaceMe.m */,
+				9C1F157C07EDD1EB18004E68291E969D /* Pod */,
+				6EDDCB3BDAA27765EEE0AC3BFE20E478 /* Support Files */,
+			);
+			name = Zequest;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9C1F157C07EDD1EB18004E68291E969D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				61005AC31651E15461C7454D8D3283A5 /* LICENSE */,
+				B84E95A4269BCEFFADEC15188981E334 /* README.md */,
+				9100379D60238A742BE4403FF3F3443E /* Zequest.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C8134F43747425DCECBFC05D1DD3FAC3 /* Pods-Zequest_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0DA854CE0A2CF09F0D2E28E69BE4507F /* Pods-Zequest_Example.modulemap */,
+				260DE828E03D1BB4B18EFDE7193B8896 /* Pods-Zequest_Example-acknowledgements.markdown */,
+				ABDF25BD37E045CD51746F6DFC1E8938 /* Pods-Zequest_Example-acknowledgements.plist */,
+				270310B807CB5B4A3ADA42D16172D1C1 /* Pods-Zequest_Example-dummy.m */,
+				BBC3AE566AFC77FA3D0BF2AE67BC645D /* Pods-Zequest_Example-frameworks.sh */,
+				FFBEFE1E4001E21642ADC9DCC57BCD8B /* Pods-Zequest_Example-Info.plist */,
+				3088CB71C97EF7F3A6D022784B1642C4 /* Pods-Zequest_Example-umbrella.h */,
+				F294596BE0B10BA333C0886EEBB9F5B7 /* Pods-Zequest_Example.debug.xcconfig */,
+				C31A86CAD699B5E2068DD8A4119887B9 /* Pods-Zequest_Example.release.xcconfig */,
+			);
+			name = "Pods-Zequest_Example";
+			path = "Target Support Files/Pods-Zequest_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8A7567BA7F57431FA193C015C0328C84 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E2859955FA65B9AA4B967988D390E013 /* Products */,
+				1EF751AC64D6B6ABEA372ED45F5985C8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2859955FA65B9AA4B967988D390E013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B14E00B049638B267FFA215D7F6315BA /* Pods_Zequest_Example.framework */,
+				B6F539BB612BCFE0DA27A039D00AAFFD /* Pods_Zequest_Tests.framework */,
+				3939B58668FE68CFE7F631D7F09D2609 /* Zequest.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1224A87F5D54BCCDE852703714ABBC7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BAEDD0ACAA429DC6C8603C8FC66AA1 /* Pods-Zequest_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E50296D468C1B2D35AE50DA852A4DF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39E1F944FD6FE6D53732ABF5D482874 /* Pods-Zequest_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86EEF2FE02CBB861BDE84E637B822529 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AA72694E5F881E47C956D7AE518D9F4 /* Zequest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DA7308EA68B0ACDD3C26C6B5C03D83 /* Build configuration list for PBXNativeTarget "Zequest" */;
+			buildPhases = (
+				86EEF2FE02CBB861BDE84E637B822529 /* Headers */,
+				A1539439B6801ABB263DEE60FA5107CA /* Sources */,
+				EAC4CB6A45FA02701CCB4FC9ABA1C2C1 /* Frameworks */,
+				EC267A42976A0CA79239A423FF28810D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zequest;
+			productName = Zequest;
+			productReference = 3939B58668FE68CFE7F631D7F09D2609 /* Zequest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A2541BE0847B24D636ABB3B4661688E /* Pods-Zequest_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3223AF730A056117B5CBD0A80373B9 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Example" */;
+			buildPhases = (
+				1E50296D468C1B2D35AE50DA852A4DF1 /* Headers */,
+				5CF9123B4BCE69C498632C40CDF82960 /* Sources */,
+				80CA32AD28D09407E0B90E35E9720541 /* Frameworks */,
+				B2B2DB0690A87EF657FC2E25B9CFA739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85305C6FA74916511005A1C1B90B6871 /* PBXTargetDependency */,
+			);
+			name = "Pods-Zequest_Example";
+			productName = "Pods-Zequest_Example";
+			productReference = B14E00B049638B267FFA215D7F6315BA /* Pods_Zequest_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2395AEFB33D69FE711741A67317644D /* Pods-Zequest_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E44A4FEA26C1DEBAE8E8F439862B43 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Tests" */;
+			buildPhases = (
+				1224A87F5D54BCCDE852703714ABBC7C /* Headers */,
+				5C49086D44915BB9393B07320F0AF500 /* Sources */,
+				B2564CAA5EEC026280898933DE317ED9 /* Frameworks */,
+				BC412D8EB0272610503A44D193EA79E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA88B8419240EB623CB3B675E151155A /* PBXTargetDependency */,
+			);
+			name = "Pods-Zequest_Tests";
+			productName = "Pods-Zequest_Tests";
+			productReference = B6F539BB612BCFE0DA27A039D00AAFFD /* Pods_Zequest_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E2859955FA65B9AA4B967988D390E013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A2541BE0847B24D636ABB3B4661688E /* Pods-Zequest_Example */,
+				E2395AEFB33D69FE711741A67317644D /* Pods-Zequest_Tests */,
+				6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2B2DB0690A87EF657FC2E25B9CFA739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC412D8EB0272610503A44D193EA79E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC267A42976A0CA79239A423FF28810D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C49086D44915BB9393B07320F0AF500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E7500C359507BC3EF0BA26BC67C1A5 /* Pods-Zequest_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF9123B4BCE69C498632C40CDF82960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2757DDFE5F6888B17ADA6619C0D5C93 /* Pods-Zequest_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1539439B6801ABB263DEE60FA5107CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E3B1AA1B40760AEADDFEEBB26ABF2C /* ReplaceMe.m in Sources */,
+				55D04989192B2FFCB6F5D7951F132F06 /* Zequest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85305C6FA74916511005A1C1B90B6871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zequest;
+			target = 6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */;
+			targetProxy = EDE849C10E2F915ACA6C39D2332F9D96 /* PBXContainerItemProxy */;
+		};
+		FA88B8419240EB623CB3B675E151155A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Zequest_Example";
+			target = 7A2541BE0847B24D636ABB3B4661688E /* Pods-Zequest_Example */;
+			targetProxy = 8BC7E1CDECA95C3E4B9869E4D602509A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3B14AF26E6D1BFA01AAD4713F9B9FC79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127A6275A3F2394197C0F64F756D6B75 /* Zequest.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zequest/Zequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zequest/Zequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zequest/Zequest.modulemap";
+				PRODUCT_MODULE_NAME = Zequest;
+				PRODUCT_NAME = Zequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3DFFAF5959F0B0155881656B9B727588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084F6BBD4A94BE968E73B9687FDB8C81 /* Pods-Zequest_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zequest_Tests/Pods-Zequest_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zequest_Tests/Pods-Zequest_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76447412F8A103F71CDD027165A48D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31A86CAD699B5E2068DD8A4119887B9 /* Pods-Zequest_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85A2F3C2AB768CECFB454B5C14AE6D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F294596BE0B10BA333C0886EEBB9F5B7 /* Pods-Zequest_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D618957F17009E86F3C65E1AC1F2D25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E8B954AAA188301CF0A9027891EE87 /* Zequest.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zequest/Zequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zequest/Zequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zequest/Zequest.modulemap";
+				PRODUCT_MODULE_NAME = Zequest;
+				PRODUCT_NAME = Zequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFD10F003E778796960DD4DCD5DF83CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD190AB0A34A8752CFD198C3A7301F98 /* Pods-Zequest_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zequest_Tests/Pods-Zequest_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zequest_Tests/Pods-Zequest_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DA7308EA68B0ACDD3C26C6B5C03D83 /* Build configuration list for PBXNativeTarget "Zequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D618957F17009E86F3C65E1AC1F2D25F /* Debug */,
+				3B14AF26E6D1BFA01AAD4713F9B9FC79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3223AF730A056117B5CBD0A80373B9 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A2F3C2AB768CECFB454B5C14AE6D81 /* Debug */,
+				76447412F8A103F71CDD027165A48D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E44A4FEA26C1DEBAE8E8F439862B43 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD10F003E778796960DD4DCD5DF83CA /* Debug */,
+				3DFFAF5959F0B0155881656B9B727588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

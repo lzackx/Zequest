@@ -1,0 +1,16 @@
+PODS:
+  - Zequest (0.1.0)
+
+DEPENDENCIES:
+  - Zequest (from `../`)
+
+EXTERNAL SOURCES:
+  Zequest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Zequest: 1086e5957cc1643d5365e8f49ec36a6bf6efccad
+
+PODFILE CHECKSUM: 516e40abaca49a240a3ea3f52d7a91d876b45eac
+
+COCOAPODS: 1.10.0
