@@ -66,6 +66,7 @@ static Zequest *_shared = nil;
 - (AFHTTPResponseSerializer *)defaultCommonResponseSerializer {
 	AFHTTPResponseSerializer *serializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingFragmentsAllowed];
 	serializer.acceptableStatusCodes = self.commonAcceptableStatusCodes;
+	serializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/plain", nil];
 	return serializer;
 }
 
