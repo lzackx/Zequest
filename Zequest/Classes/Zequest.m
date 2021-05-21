@@ -83,6 +83,10 @@ static Zequest *_shared = nil;
 	self.commonHTTPSessionManager.requestSerializer.timeoutInterval = self.commonRequestTimeoutInterval;
 }
 
+- (void)registerCommonRequestMaxConcurrentOperationCount:(NSInteger)maxConcurrentOperationCount {
+	self.maxConcurrentOperationCount = maxConcurrentOperationCount;
+}
+
 - (void)registerCommonResponseAcceptableStatusCodes:(NSIndexSet *)acceptableStatusCodes {
 	self.commonAcceptableStatusCodes = acceptableStatusCodes;
 	self.commonHTTPSessionManager.responseSerializer.acceptableStatusCodes = self.commonAcceptableStatusCodes;
@@ -102,6 +106,7 @@ static Zequest *_shared = nil;
 	self.commonHTTPSessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
 	self.commonHTTPSessionManager.requestSerializer = [self defaultCommonRequestSerializer];
 	self.commonHTTPSessionManager.responseSerializer = [self defaultCommonResponseSerializer];
+	self.commonHTTPSessionManager.operationQueue.maxConcurrentOperationCount = self.maxConcurrentOperationCount;
 	[self.commonHTTPSessionManager setTaskDidCompleteBlock:self.commonRequestTaskDidComplete];
 }
 

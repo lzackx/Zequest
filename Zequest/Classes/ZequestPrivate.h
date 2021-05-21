@@ -23,6 +23,7 @@
 @property (nonatomic, readwrite, copy) NSDictionary *commonBodyParameters;
 @property (nonatomic, readwrite, assign) NSTimeInterval commonRequestTimeoutInterval;
 @property (nonatomic, readwrite, copy) NSIndexSet *commonAcceptableStatusCodes;
+@property (nonatomic, readwrite, assign) NSInteger maxConcurrentOperationCount;
 @property (nonatomic, readwrite, copy) void(^commonRequestTaskDidComplete)(NSURLSession *session, NSURLSessionTask *task, NSError *error) ;
 
 @property (nonatomic, readwrite, strong) NSCache<NSString *, NSString *> *commonCache;

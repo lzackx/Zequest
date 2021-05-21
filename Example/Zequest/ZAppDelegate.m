@@ -22,6 +22,7 @@
 		@"common_body": @"zequest",
 	}];
 	[[Zequest shared] registerCommonRequestTimeoutInterval:8];
+	[[Zequest shared] registerCommonRequestMaxConcurrentOperationCount:4];
 	[[Zequest shared] registerCommonRequestTaskDidCompleteBlock:^(NSURLSession * _Nonnull session, NSURLSessionTask * _Nonnull task, NSError * _Nullable error) {
 		NSLog(@"%@", task);
 	}];
