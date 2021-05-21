@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Zequest.h"
 
 FOUNDATION_EXPORT double ZequestVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZequestVersionString[];

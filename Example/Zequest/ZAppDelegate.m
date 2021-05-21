@@ -7,12 +7,45 @@
 //
 
 #import "ZAppDelegate.h"
+#import <Zequest/Zequest.h>
 
 @implementation ZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+		
+	[[Zequest shared] registerCommonHeaderParameters:@{
+		@"User-Agent": @"zequest",
+	}];
+	[[Zequest shared] registerCommonBodyParameters:@{
+		@"common_body": @"zequest",
+	}];
+	[[Zequest shared] registerCommonRequestTimeoutInterval:8];
+	[[Zequest shared] registerCommonRequestTaskDidCompleteBlock:^(NSURLSession * _Nonnull session, NSURLSessionTask * _Nonnull task, NSError * _Nullable error) {
+		NSLog(@"%@", task);
+	}];
+	[[Zequest shared] launchReachabilityManagerWithDomain:@"lzackx.com" statusChangeCallback:^(NSInteger status) {
+		NSLog(@"Reachability Status: %ld", status);
+	}];
+	[[Zequest shared] launchCommonHTTPSessionManager];
+	[[Zequest shared] get:@"https://raw.githubusercontent.com/lzackx/Zequest/master/Example/zequest.json"
+				   header:@{
+					   @"header": @"zequest"
+				   }
+			   parameters:@{
+				   @"parameters": @"zequest"
+			   }
+			  shouldCache:YES
+				dataClass:nil
+				 progress:^(NSProgress * progress) {
+		NSLog(@"progress: %@", progress.userInfo);
+	} success:^(NSURLSessionDataTask * task, id object) {
+		NSLog(@"%@: %@", task, object);
+	} failure:^(NSURLSessionDataTask * task, NSError * error) {
+		NSLog(@"%@: %@", task, error);
+	}];
+	
     return YES;
 }
 

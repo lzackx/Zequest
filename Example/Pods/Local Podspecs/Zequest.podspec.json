@@ -1,8 +1,8 @@
 {
   "name": "Zequest",
-  "version": "0.1.0",
-  "summary": "A short description of Zequest.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "A common request tool",
+  "description": "A common request tool",
   "homepage": "https://github.com/lzackx/Zequest",
   "license": {
     "type": "MIT",
@@ -13,10 +13,27 @@
   },
   "source": {
     "git": "https://github.com/lzackx/Zequest.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Zequest/Classes/**/*"
+  "source_files": [
+    "Zequest/Classes/**/*.{h,m}"
+  ],
+  "public_header_files": [
+    "Zequest/Classes/Zequest.h"
+  ],
+  "private_header_files": [
+    "Zequest/Classes/ZequestPrivate.h",
+    "Zequest/Classes/Zequest+Cache.h"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "YYModel": [
+
+    ]
+  }
 }

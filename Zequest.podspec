@@ -30,7 +30,16 @@ A common request tool
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Zequest/Classes/**/*'
+  s.source_files = [
+	'Zequest/Classes/**/*.{h,m}',
+  ]
+  s.public_header_files = [
+	'Zequest/Classes/Zequest.h',
+  ]
+  s.private_header_files = [
+	'Zequest/Classes/ZequestPrivate.h',
+	'Zequest/Classes/Zequest+Cache.h',
+  ]
   
   # s.resource_bundles = {
   #   'Zequest' => ['Zequest/Assets/*.png']
@@ -39,4 +48,5 @@ A common request tool
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking'
+  s.dependency 'YYModel'
 end

@@ -7,77 +7,244 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46769C29D3DF1D3E0D0F0E8A12C144A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		55D04989192B2FFCB6F5D7951F132F06 /* Zequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34656D85BAAEF9CDFA03BFADCF29A0FD /* Zequest-dummy.m */; };
-		64E3B1AA1B40760AEADDFEEBB26ABF2C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501B5B3FC4341B91A14CFA4C2225E6A /* ReplaceMe.m */; };
-		76C4B0358BE9F123C0A978C461FD54DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8AA72694E5F881E47C956D7AE518D9F4 /* Zequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F1932BC32DC85E8AFD7EF38471C88B /* Zequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01BEB06B4E262DCEA7A94F4206311BF9 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBBF52FC626381B6BF71E474BBEC46 /* UIRefreshControl+AFNetworking.m */; };
+		02937E01710489D6668D0C3700E8EADA /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DF32ED39D153401A09F99723C846DC /* UIProgressView+AFNetworking.m */; };
+		07E08C56386C02093F27CF28E4D01F11 /* WKWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 93BE72040069E799A0A8FC81AFF962C4 /* WKWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D5C0606D6FBFB4877FC3C3FF4A2208 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E5206C4DFBFE8F072822FCEE035BEA /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0996AABB2BC91FD9CF43873767B41EB5 /* Zequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E8D8FFCCFB7FE6D997215E2BEECA20 /* Zequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		106468F1D026BCEF8F0DBD89BFD48494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20637AC3A262655DF8C4A9BF431C9CCF /* Foundation.framework */; };
+		163B07BE98EAA270AF0A7AA82F84208E /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 77FE7E83821C648A122086B8A54F5EB0 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F60D0D11B5E9DDABEFB6A4ABDA74864 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20637AC3A262655DF8C4A9BF431C9CCF /* Foundation.framework */; };
+		219322D73B873BFA5511CB496DA3F8C0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80825BFEC20A1DD44DA7655BDF98576B /* CoreFoundation.framework */; };
+		232B2E8F32708EF2D85000B997FB69A2 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C4E172F9D82401C68DB5B18705165E /* UIImageView+AFNetworking.m */; };
+		2657AB4F1D04803DABFE7DDF80C0EF7F /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4760C7D4E7BDA0B392D2644952A5F9DA /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A4B7AAB7139F4EF42B7459D0EE9DCAD /* Zequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A9FC36BFF4941BBEBFC43B3FC8500F /* Zequest-dummy.m */; };
+		2AB5C7D99BD529942B2C81AB0CD8A600 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A020FECACB116830A297CA2FACF9FD5B /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E7446308877A2FA6F48A7E545FFB1B1 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDF7AAE395E1CFFCDB0122741BD47C /* AFNetworkReachabilityManager.m */; };
+		38B57953D8705FA2092852071CD3A462 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = EE575F1D31C65FE09ED377984E6A828D /* UIButton+AFNetworking.m */; };
+		3A7EFD96529F4178860DDCF4B85B948A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20637AC3A262655DF8C4A9BF431C9CCF /* Foundation.framework */; };
+		3CA0C9185ED4469D427AA53B26E1B18F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE28D1A0BD2FF07D9CA42F71A7BA694 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EB561D79F76C06AA538872D6302D35D /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86672056A76ABB0B578A9457342F8B07 /* AFNetworking-dummy.m */; };
+		40426F061CD9B0B435C690CAFEA2BD00 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7D507316407B9791C257599F780A06 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4381C0C2775DF318539274584275BCB1 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02439A76002B3F7508C481C892E06756 /* NSObject+YYModel.m */; };
+		4992259A954F174FA8BDB394DB1C8F93 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EE59144095BAA3A397832FD51A0920F8 /* AFAutoPurgingImageCache.m */; };
+		4FCA4E8703DBF3D3FB7D5BA06229159D /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A1D3942E5946686ADAF6CDCE917E05 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558419C90B0169B1AE0AEEDFCE351662 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20637AC3A262655DF8C4A9BF431C9CCF /* Foundation.framework */; };
+		5DF73AB935467B39CC1E9FDC22BCEBF8 /* Zequest+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3150BFB5C9E6BF138B24DCACC6F7A2 /* Zequest+Cache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6218AABA7D60EEE58F24657D65595CC1 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9F7006A91BF047D09EB36E42212478 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		672058B57410299248CBDC3BB2DDDB88 /* ZequestPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3A52931293B2464E218431B76992CA /* ZequestPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6EE482EF823C5090378A600998A120F9 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A722ED5F3705C45D399C0BB8D34D945C /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722EC0191A173ECB2121618467D32DF4 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D2098015C4BDE92A423CE07F220C6A8B /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76536A816A576F08FADD3366A2E40094 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FA4D99F0D09FD8479ED85E7C11C562 /* AFURLSessionManager.m */; };
+		783CFA5C71F35BFD37C4A00E44E470B2 /* Zequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D91EA9FD9292438EC3BC69EE738F7C /* Zequest.m */; };
+		7FC0AE9762A6ACEFCF196289650FFFA5 /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8AB88EB6072C59AA6DF5BE1D5F3BBB /* YYModel.framework */; };
+		828919193B61FC103B8846F54EF3131C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D25FD3061850C986E3E8FFCC27594E /* AFURLResponseSerialization.m */; };
+		8CE480485EFF2F15B7A394C90CFF274A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C52485B56B4B18A0871E134C32727F /* AFHTTPSessionManager.m */; };
+		8D060BB549FA8C46C8A5E230C7E00CFE /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C174644B0A7218F7E180FB4F558942F1 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD422F65B364DB9C1EAE655653561A7 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18166F8972CE9C9C29AB2F0E4DF47E28 /* YYModel-dummy.m */; };
+		8EE2F6CB1E907021261E7F95E76B8C2A /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BBC06D60D2CD9FFC8C807415F533FA /* AFNetworking.framework */; };
+		905A5BD8B0732532496FAA4BCA58958C /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 915B576270905E9ABDE191FE719C98F5 /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9290786DFB86927163C38CB390D32A9E /* Zequest+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E712A25EE93AD5F5D46908B01800FBF /* Zequest+Cache.m */; };
+		945706A2B9446E202A1735BF4AD56B75 /* Pods-Zequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 270310B807CB5B4A3ADA42D16172D1C1 /* Pods-Zequest_Example-dummy.m */; };
+		951B6669114E3C8D2E4961AFE2BB6647 /* WKWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CA6895C3AF64876A8FD967C34A28CB /* WKWebView+AFNetworking.m */; };
+		9D3A67B86C6A3A1339783953B3E833B9 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2534DA97AE4F21894D0CC6B536597363 /* AFNetworkActivityIndicatorManager.m */; };
+		9EDC802A0B91899E1B7AFA75471C9872 /* Pods-Zequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3088CB71C97EF7F3A6D022784B1642C4 /* Pods-Zequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06F8E2BDB1C1C5627C02E09756BD055 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C8E3D00696FF1B61096C20F65EECA1 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4BAEDD0ACAA429DC6C8603C8FC66AA1 /* Pods-Zequest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB63C50A5E90B29EB2E7CE8E242F4DE2 /* Pods-Zequest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2757DDFE5F6888B17ADA6619C0D5C93 /* Pods-Zequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 270310B807CB5B4A3ADA42D16172D1C1 /* Pods-Zequest_Example-dummy.m */; };
-		CC57D6355C3FB5CAF69CDB7AB5890CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A6DE5A1B478949FE0444318D47C1A9CC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B54ADEC4E8F1B290F1A654A0A0ADE /* AFSecurityPolicy.m */; };
+		A7E6C236F5C97B35484B553454B609B0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B53E6C1020C05A5F5F8A64D2CE45CEF1 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AECFCA2598AABAEB044F6C4594F3222F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = AA006A3FAEF947CB8E78212650959893 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4658F8495B18BD4EB5D893CAFF3BBBC /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = D8BED98189C514ED1B08D6FB563FE18D /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B83B1CA17424975882DA1066536E112B /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E108F0C3D06C3D652F8BDF013771C092 /* AFImageDownloader.m */; };
+		BBFB85B525E1E77FCB19C84D911205D8 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C2E471E810274BA87E01090F891E4E /* AFURLRequestSerialization.m */; };
+		C29C1BF86EA5C3DBD7AB893ACF8E2B17 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A19F12BCD4B0D5DFEC2D5DAB061C67B /* YYClassInfo.m */; };
+		C9F701A2E6208D9E840E7A91287F21B9 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99B94F7F785AF7738CDD61857075DA13 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC57D6355C3FB5CAF69CDB7AB5890CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20637AC3A262655DF8C4A9BF431C9CCF /* Foundation.framework */; };
+		D66716504D475B6377F7DD5C7C2BBCDE /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4813CBAD82DA61187ED6F8ABEE50DF02 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA40AA8CBB6200B48F32ED61B3D071EA /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE506D7F4B5DE3B926137F8A9912F29 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFF4A17803715B7CEB32A159C731532D /* Zequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B23836603AF3107D7A00CDD071B05A /* Zequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4E7500C359507BC3EF0BA26BC67C1A5 /* Pods-Zequest_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2D94A74794241DBDABD3E163C332E /* Pods-Zequest_Tests-dummy.m */; };
-		F39E1F944FD6FE6D53732ABF5D482874 /* Pods-Zequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3088CB71C97EF7F3A6D022784B1642C4 /* Pods-Zequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8EB9F2CFC54AFE86B618DB528647311 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 86938DB8C88FDDDC45BDFF2DC135B573 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F191431A32F803DC12F12EF3B4D984BD /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF459FA2FF4AFFF6F58C922326857F9 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4352388490E70C1CF187D93E390FB2A /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2C5244F6FB808B9C53F9B03C5084E3 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDA522B328C907FBF9B11C64C1A7C624 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 756F5C19D6902C84CABCEACD95C81116 /* UIActivityIndicatorView+AFNetworking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8BC7E1CDECA95C3E4B9869E4D602509A /* PBXContainerItemProxy */ = {
+		130F7DFF323A40543E1C75BB44A0CC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
+			remoteInfo = YYModel;
+		};
+		1E506F45DB3D597675113DD2839EE2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		29F9B794175FBED3891C35D12B488A3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7A2541BE0847B24D636ABB3B4661688E;
 			remoteInfo = "Pods-Zequest_Example";
 		};
-		EDE849C10E2F915ACA6C39D2332F9D96 /* PBXContainerItemProxy */ = {
+		52DF4A5B36F21C94EEFA1869455CC6A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		82E0ED154F957A7FEFFC8382D19F09D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6422E7E1938F4B5D720743DA3AD19D46;
 			remoteInfo = Zequest;
 		};
+		A3319D91C3E5CD8D7C41E25B139BAE40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
+			remoteInfo = YYModel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02439A76002B3F7508C481C892E06756 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		084F6BBD4A94BE968E73B9687FDB8C81 /* Pods-Zequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0C26DCBB361FD2BAFC28883CDFF401AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0D3150BFB5C9E6BF138B24DCACC6F7A2 /* Zequest+Cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Zequest+Cache.h"; path = "Zequest/Classes/Zequest+Cache.h"; sourceTree = "<group>"; };
+		0D8AB88EB6072C59AA6DF5BE1D5F3BBB /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA854CE0A2CF09F0D2E28E69BE4507F /* Pods-Zequest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Zequest_Example.modulemap"; sourceTree = "<group>"; };
-		11C25B3706E9A0B94D4D10F6ABF1C392 /* Zequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zequest.modulemap; sourceTree = "<group>"; };
-		127A6275A3F2394197C0F64F756D6B75 /* Zequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zequest.release.xcconfig; sourceTree = "<group>"; };
-		18BDCBF91A26DD804B92DAA3F823276D /* Zequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zequest-prefix.pch"; sourceTree = "<group>"; };
+		12E5206C4DFBFE8F072822FCEE035BEA /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		13E8D8FFCCFB7FE6D997215E2BEECA20 /* Zequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zequest-umbrella.h"; sourceTree = "<group>"; };
+		15A372FC7F47897FE872A22153031680 /* Zequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zequest.debug.xcconfig; sourceTree = "<group>"; };
+		18166F8972CE9C9C29AB2F0E4DF47E28 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
 		18BEABB18AD93DC46C2D4F0C80363307 /* Pods-Zequest_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Tests-Info.plist"; sourceTree = "<group>"; };
+		1B4951323BAE084636A64A93F39C706C /* AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.debug.xcconfig; sourceTree = "<group>"; };
+		20637AC3A262655DF8C4A9BF431C9CCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2534DA97AE4F21894D0CC6B536597363 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		260DE828E03D1BB4B18EFDE7193B8896 /* Pods-Zequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		270310B807CB5B4A3ADA42D16172D1C1 /* Pods-Zequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zequest_Example-dummy.m"; sourceTree = "<group>"; };
+		29C4E172F9D82401C68DB5B18705165E /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		2A19F12BCD4B0D5DFEC2D5DAB061C67B /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		2CE28D1A0BD2FF07D9CA42F71A7BA694 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		2EF684DAD39104B22AE42F3DD74D3C32 /* Zequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zequest-Info.plist"; sourceTree = "<group>"; };
 		3088CB71C97EF7F3A6D022784B1642C4 /* Pods-Zequest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zequest_Example-umbrella.h"; sourceTree = "<group>"; };
-		34656D85BAAEF9CDFA03BFADCF29A0FD /* Zequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zequest-dummy.m"; sourceTree = "<group>"; };
+		38B23836603AF3107D7A00CDD071B05A /* Zequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zequest.h; path = Zequest/Classes/Zequest.h; sourceTree = "<group>"; };
 		3939B58668FE68CFE7F631D7F09D2609 /* Zequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zequest.framework; path = Zequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4501B5B3FC4341B91A14CFA4C2225E6A /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Zequest/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		3C7D507316407B9791C257599F780A06 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		3E712A25EE93AD5F5D46908B01800FBF /* Zequest+Cache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Zequest+Cache.m"; path = "Zequest/Classes/Zequest+Cache.m"; sourceTree = "<group>"; };
+		465F2B4F9C2BBB1AA870E739AE1F249F /* YYModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YYModel-Info.plist"; sourceTree = "<group>"; };
 		46C793DAB3780ECCF4C61CA2012AE569 /* Pods-Zequest_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zequest_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4760C7D4E7BDA0B392D2644952A5F9DA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		47AECF9E0EBFB539F97B399C23657F83 /* Zequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zequest.modulemap; sourceTree = "<group>"; };
+		4813CBAD82DA61187ED6F8ABEE50DF02 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		4ED2D94A74794241DBDABD3E163C332E /* Pods-Zequest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zequest_Tests-dummy.m"; sourceTree = "<group>"; };
-		55F1932BC32DC85E8AFD7EF38471C88B /* Zequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zequest-umbrella.h"; sourceTree = "<group>"; };
-		61005AC31651E15461C7454D8D3283A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9100379D60238A742BE4403FF3F3443E /* Zequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Zequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		57D25FD3061850C986E3E8FFCC27594E /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		58C8E3D00696FF1B61096C20F65EECA1 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		5ECBBF52FC626381B6BF71E474BBEC46 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		5F6B54ADEC4E8F1B290F1A654A0A0ADE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		688993345CCBFEA1174AE7E9C8F9031F /* Zequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Zequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6A9F7006A91BF047D09EB36E42212478 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		756F5C19D6902C84CABCEACD95C81116 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		77FE7E83821C648A122086B8A54F5EB0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		7A5BFB8CE8B618C51D22ADC583C4F89F /* Zequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zequest.release.xcconfig; sourceTree = "<group>"; };
+		7DE3526B5CFB05EEE960AB695136CF41 /* Zequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zequest-prefix.pch"; sourceTree = "<group>"; };
+		80825BFEC20A1DD44DA7655BDF98576B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		81BBC06D60D2CD9FFC8C807415F533FA /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C52485B56B4B18A0871E134C32727F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		85FFD8BA77550DFC9A2113FB5A19034D /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		86672056A76ABB0B578A9457342F8B07 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		86938DB8C88FDDDC45BDFF2DC135B573 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		86FFEB9D44962F9951B4D2B948C980FC /* YYModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.debug.xcconfig; sourceTree = "<group>"; };
+		87A1D3942E5946686ADAF6CDCE917E05 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		89C2E471E810274BA87E01090F891E4E /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		8A979A04A07D561ECD17E42A748C24B5 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		8BE506D7F4B5DE3B926137F8A9912F29 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		90D91EA9FD9292438EC3BC69EE738F7C /* Zequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Zequest.m; path = Zequest/Classes/Zequest.m; sourceTree = "<group>"; };
+		915B576270905E9ABDE191FE719C98F5 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
+		91DF32ED39D153401A09F99723C846DC /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		93BE72040069E799A0A8FC81AFF962C4 /* WKWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+AFNetworking.h"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		97DFBA366BF2B64B0966E51E28F4B14B /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		99B94F7F785AF7738CDD61857075DA13 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A99FBC7F07FD48E4C6BB4EDF2713F9BE /* Zequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zequest-Info.plist"; sourceTree = "<group>"; };
+		9FF459FA2FF4AFFF6F58C922326857F9 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		A020FECACB116830A297CA2FACF9FD5B /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A722ED5F3705C45D399C0BB8D34D945C /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		AA006A3FAEF947CB8E78212650959893 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		ABDF25BD37E045CD51746F6DFC1E8938 /* Pods-Zequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AE06321BE65816401576EFECB6D5525D /* Pods-Zequest_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AE2C5244F6FB808B9C53F9B03C5084E3 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		B14E00B049638B267FFA215D7F6315BA /* Pods_Zequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zequest_Example.framework; path = "Pods-Zequest_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2FA4D99F0D09FD8479ED85E7C11C562 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		B53E6C1020C05A5F5F8A64D2CE45CEF1 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		B5EDF7AAE395E1CFFCDB0122741BD47C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		B6F539BB612BCFE0DA27A039D00AAFFD /* Pods_Zequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zequest_Tests.framework; path = "Pods-Zequest_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B84E95A4269BCEFFADEC15188981E334 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BB3A52931293B2464E218431B76992CA /* ZequestPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZequestPrivate.h; path = Zequest/Classes/ZequestPrivate.h; sourceTree = "<group>"; };
 		BBC3AE566AFC77FA3D0BF2AE67BC645D /* Pods-Zequest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zequest_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C174644B0A7218F7E180FB4F558942F1 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		C31A86CAD699B5E2068DD8A4119887B9 /* Pods-Zequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C71F0FD5FCEC06D6ACFFD93C0EC1C70B /* Pods-Zequest_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Zequest_Tests.modulemap"; sourceTree = "<group>"; };
+		CBEA16D615CA1E2D99C5E259102C5F5E /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
 		CD190AB0A34A8752CFD198C3A7301F98 /* Pods-Zequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E7E8B954AAA188301CF0A9027891EE87 /* Zequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zequest.debug.xcconfig; sourceTree = "<group>"; };
+		D0CA6895C3AF64876A8FD967C34A28CB /* WKWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+AFNetworking.m"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		D2098015C4BDE92A423CE07F220C6A8B /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		D8BED98189C514ED1B08D6FB563FE18D /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		DA8B63EAC84B577520DC3E11640D1086 /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
+		DEFE0E8F5272097BC4A2F28050D489EA /* YYModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.release.xcconfig; sourceTree = "<group>"; };
+		E108F0C3D06C3D652F8BDF013771C092 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A9FC36BFF4941BBEBFC43B3FC8500F /* Zequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zequest-dummy.m"; sourceTree = "<group>"; };
 		EB63C50A5E90B29EB2E7CE8E242F4DE2 /* Pods-Zequest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zequest_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EE575F1D31C65FE09ED377984E6A828D /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		EE59144095BAA3A397832FD51A0920F8 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		F08C9D1626736E09E785DA1F5BD66CA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F294596BE0B10BA333C0886EEBB9F5B7 /* Pods-Zequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FAD280ECE94EFFD25ECBF36B7A71410C /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYModel.modulemap; sourceTree = "<group>"; };
 		FFBEFE1E4001E21642ADC9DCC57BCD8B /* Pods-Zequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zequest_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		80CA32AD28D09407E0B90E35E9720541 /* Frameworks */ = {
+		3C6E7FC659CC8F8252FFE18B3E94C27A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C4B0358BE9F123C0A978C461FD54DD /* Foundation.framework in Frameworks */,
+				8EE2F6CB1E907021261E7F95E76B8C2A /* AFNetworking.framework in Frameworks */,
+				1F60D0D11B5E9DDABEFB6A4ABDA74864 /* Foundation.framework in Frameworks */,
+				7FC0AE9762A6ACEFCF196289650FFFA5 /* YYModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2FFCAD6C20E462A06466CFB53247D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7EFD96529F4178860DDCF4B85B948A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9BCCCF510F65077210B8D9944565EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558419C90B0169B1AE0AEEDFCE351662 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEED147B124BE7EB0C717F29107F404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219322D73B873BFA5511CB496DA3F8C0 /* CoreFoundation.framework in Frameworks */,
+				106468F1D026BCEF8F0DBD89BFD48494 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,17 +256,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAC4CB6A45FA02701CCB4FC9ABA1C2C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46769C29D3DF1D3E0D0F0E8A12C144A4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F47694CC71CB65025AE0360317C48A0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B9A8B0A28D89329EFCB18182A56E7C8 /* Zequest */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		1646F7791129A0B0D09BC95410ED255F /* Pods-Zequest_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +283,33 @@
 			path = "Target Support Files/Pods-Zequest_Tests";
 			sourceTree = "<group>";
 		};
+		1A6D4C07261C809EC0D616B7FA824FB2 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				AE2C5244F6FB808B9C53F9B03C5084E3 /* AFCompatibilityMacros.h */,
+				99B94F7F785AF7738CDD61857075DA13 /* AFHTTPSessionManager.h */,
+				81C52485B56B4B18A0871E134C32727F /* AFHTTPSessionManager.m */,
+				B53E6C1020C05A5F5F8A64D2CE45CEF1 /* AFURLSessionManager.h */,
+				B2FA4D99F0D09FD8479ED85E7C11C562 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		1E32F87F78830391165017022932654A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47AECF9E0EBFB539F97B399C23657F83 /* Zequest.modulemap */,
+				E4A9FC36BFF4941BBEBFC43B3FC8500F /* Zequest-dummy.m */,
+				2EF684DAD39104B22AE42F3DD74D3C32 /* Zequest-Info.plist */,
+				7DE3526B5CFB05EEE960AB695136CF41 /* Zequest-prefix.pch */,
+				13E8D8FFCCFB7FE6D997215E2BEECA20 /* Zequest-umbrella.h */,
+				15A372FC7F47897FE872A22153031680 /* Zequest.debug.xcconfig */,
+				7A5BFB8CE8B618C51D22ADC583C4F89F /* Zequest.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Zequest";
+			sourceTree = "<group>";
+		};
 		1EF751AC64D6B6ABEA372ED45F5985C8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,56 +319,154 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		25CD595F303B3AFB05720CDDF0857193 /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				AA006A3FAEF947CB8E78212650959893 /* AFSecurityPolicy.h */,
+				5F6B54ADEC4E8F1B290F1A654A0A0ADE /* AFSecurityPolicy.m */,
 			);
-			name = iOS;
+			name = Security;
 			sourceTree = "<group>";
 		};
-		6EDDCB3BDAA27765EEE0AC3BFE20E478 /* Support Files */ = {
+		3F42494EC351B7FD35F4993560E4D03C /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				11C25B3706E9A0B94D4D10F6ABF1C392 /* Zequest.modulemap */,
-				34656D85BAAEF9CDFA03BFADCF29A0FD /* Zequest-dummy.m */,
-				A99FBC7F07FD48E4C6BB4EDF2713F9BE /* Zequest-Info.plist */,
-				18BDCBF91A26DD804B92DAA3F823276D /* Zequest-prefix.pch */,
-				55F1932BC32DC85E8AFD7EF38471C88B /* Zequest-umbrella.h */,
-				E7E8B954AAA188301CF0A9027891EE87 /* Zequest.debug.xcconfig */,
-				127A6275A3F2394197C0F64F756D6B75 /* Zequest.release.xcconfig */,
+				4760C7D4E7BDA0B392D2644952A5F9DA /* AFURLRequestSerialization.h */,
+				89C2E471E810274BA87E01090F891E4E /* AFURLRequestSerialization.m */,
+				C174644B0A7218F7E180FB4F558942F1 /* AFURLResponseSerialization.h */,
+				57D25FD3061850C986E3E8FFCC27594E /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		429EE93CDF9BC27ADD2A4A59FA61C7BA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				77FE7E83821C648A122086B8A54F5EB0 /* AFNetworkReachabilityManager.h */,
+				B5EDF7AAE395E1CFFCDB0122741BD47C /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		4C0E6894721731994A1EC947FFB9B9D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD693572FB55FD69E970839B8B016AD0 /* AFNetworking */,
+				DE44AFA5A779EF277C029E64355A1555 /* YYModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5FC08B2A663134D8A9B3A5B6517D4BFE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A722ED5F3705C45D399C0BB8D34D945C /* AFAutoPurgingImageCache.h */,
+				EE59144095BAA3A397832FD51A0920F8 /* AFAutoPurgingImageCache.m */,
+				D8BED98189C514ED1B08D6FB563FE18D /* AFImageDownloader.h */,
+				E108F0C3D06C3D652F8BDF013771C092 /* AFImageDownloader.m */,
+				D2098015C4BDE92A423CE07F220C6A8B /* AFNetworkActivityIndicatorManager.h */,
+				2534DA97AE4F21894D0CC6B536597363 /* AFNetworkActivityIndicatorManager.m */,
+				86938DB8C88FDDDC45BDFF2DC135B573 /* UIActivityIndicatorView+AFNetworking.h */,
+				756F5C19D6902C84CABCEACD95C81116 /* UIActivityIndicatorView+AFNetworking.m */,
+				3C7D507316407B9791C257599F780A06 /* UIButton+AFNetworking.h */,
+				EE575F1D31C65FE09ED377984E6A828D /* UIButton+AFNetworking.m */,
+				9FF459FA2FF4AFFF6F58C922326857F9 /* UIImageView+AFNetworking.h */,
+				29C4E172F9D82401C68DB5B18705165E /* UIImageView+AFNetworking.m */,
+				87A1D3942E5946686ADAF6CDCE917E05 /* UIKit+AFNetworking.h */,
+				2CE28D1A0BD2FF07D9CA42F71A7BA694 /* UIProgressView+AFNetworking.h */,
+				91DF32ED39D153401A09F99723C846DC /* UIProgressView+AFNetworking.m */,
+				A020FECACB116830A297CA2FACF9FD5B /* UIRefreshControl+AFNetworking.h */,
+				5ECBBF52FC626381B6BF71E474BBEC46 /* UIRefreshControl+AFNetworking.m */,
+				93BE72040069E799A0A8FC81AFF962C4 /* WKWebView+AFNetworking.h */,
+				D0CA6895C3AF64876A8FD967C34A28CB /* WKWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		695B7FB6250F4A63A2CC1EBB667A4498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */,
+				B14E00B049638B267FFA215D7F6315BA /* Pods_Zequest_Example.framework */,
+				B6F539BB612BCFE0DA27A039D00AAFFD /* Pods_Zequest_Tests.framework */,
+				E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */,
+				3939B58668FE68CFE7F631D7F09D2609 /* Zequest.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AEBF0126DFB98835E62B31268E3CEED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAD280ECE94EFFD25ECBF36B7A71410C /* YYModel.modulemap */,
+				18166F8972CE9C9C29AB2F0E4DF47E28 /* YYModel-dummy.m */,
+				465F2B4F9C2BBB1AA870E739AE1F249F /* YYModel-Info.plist */,
+				8A979A04A07D561ECD17E42A748C24B5 /* YYModel-prefix.pch */,
+				915B576270905E9ABDE191FE719C98F5 /* YYModel-umbrella.h */,
+				86FFEB9D44962F9951B4D2B948C980FC /* YYModel.debug.xcconfig */,
+				DEFE0E8F5272097BC4A2F28050D489EA /* YYModel.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Zequest";
+			path = "../Target Support Files/YYModel";
 			sourceTree = "<group>";
 		};
-		8A7567BA7F57431FA193C015C0328C84 /* Development Pods */ = {
+		72416EFC01061307B5C314C23091BEEB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				994F9827FE9CE0475C3616797ACB02DD /* Zequest */,
+				85FFD8BA77550DFC9A2113FB5A19034D /* AFNetworking.modulemap */,
+				86672056A76ABB0B578A9457342F8B07 /* AFNetworking-dummy.m */,
+				CBEA16D615CA1E2D99C5E259102C5F5E /* AFNetworking-Info.plist */,
+				97DFBA366BF2B64B0966E51E28F4B14B /* AFNetworking-prefix.pch */,
+				12E5206C4DFBFE8F072822FCEE035BEA /* AFNetworking-umbrella.h */,
+				1B4951323BAE084636A64A93F39C706C /* AFNetworking.debug.xcconfig */,
+				DA8B63EAC84B577520DC3E11640D1086 /* AFNetworking.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
-		994F9827FE9CE0475C3616797ACB02DD /* Zequest */ = {
+		7B9A8B0A28D89329EFCB18182A56E7C8 /* Zequest */ = {
 			isa = PBXGroup;
 			children = (
-				4501B5B3FC4341B91A14CFA4C2225E6A /* ReplaceMe.m */,
-				9C1F157C07EDD1EB18004E68291E969D /* Pod */,
-				6EDDCB3BDAA27765EEE0AC3BFE20E478 /* Support Files */,
+				38B23836603AF3107D7A00CDD071B05A /* Zequest.h */,
+				90D91EA9FD9292438EC3BC69EE738F7C /* Zequest.m */,
+				0D3150BFB5C9E6BF138B24DCACC6F7A2 /* Zequest+Cache.h */,
+				3E712A25EE93AD5F5D46908B01800FBF /* Zequest+Cache.m */,
+				BB3A52931293B2464E218431B76992CA /* ZequestPrivate.h */,
+				AC2D43A5CC3A4F8384AAF277274C8704 /* Pod */,
+				1E32F87F78830391165017022932654A /* Support Files */,
 			);
 			name = Zequest;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		9C1F157C07EDD1EB18004E68291E969D /* Pod */ = {
+		7E4A47E686691152772EA1DE0FAB800A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				61005AC31651E15461C7454D8D3283A5 /* LICENSE */,
-				B84E95A4269BCEFFADEC15188981E334 /* README.md */,
-				9100379D60238A742BE4403FF3F3443E /* Zequest.podspec */,
+				80825BFEC20A1DD44DA7655BDF98576B /* CoreFoundation.framework */,
+				20637AC3A262655DF8C4A9BF431C9CCF /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AC2D43A5CC3A4F8384AAF277274C8704 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0C26DCBB361FD2BAFC28883CDFF401AF /* LICENSE */,
+				F08C9D1626736E09E785DA1F5BD66CA3 /* README.md */,
+				688993345CCBFEA1174AE7E9C8F9031F /* Zequest.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		C0A2CB51F26FA22A7E3A12FAC3EC8A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81BBC06D60D2CD9FFC8C807415F533FA /* AFNetworking.framework */,
+				0D8AB88EB6072C59AA6DF5BE1D5F3BBB /* YYModel.framework */,
+				7E4A47E686691152772EA1DE0FAB800A /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C8134F43747425DCECBFC05D1DD3FAC3 /* Pods-Zequest_Example */ = {
@@ -198,29 +490,41 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8A7567BA7F57431FA193C015C0328C84 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E2859955FA65B9AA4B967988D390E013 /* Products */,
+				0F47694CC71CB65025AE0360317C48A0 /* Development Pods */,
+				C0A2CB51F26FA22A7E3A12FAC3EC8A79 /* Frameworks */,
+				4C0E6894721731994A1EC947FFB9B9D3 /* Pods */,
+				695B7FB6250F4A63A2CC1EBB667A4498 /* Products */,
 				1EF751AC64D6B6ABEA372ED45F5985C8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DD693572FB55FD69E970839B8B016AD0 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				4813CBAD82DA61187ED6F8ABEE50DF02 /* AFNetworking.h */,
+				1A6D4C07261C809EC0D616B7FA824FB2 /* NSURLSession */,
+				429EE93CDF9BC27ADD2A4A59FA61C7BA /* Reachability */,
+				25CD595F303B3AFB05720CDDF0857193 /* Security */,
+				3F42494EC351B7FD35F4993560E4D03C /* Serialization */,
+				72416EFC01061307B5C314C23091BEEB /* Support Files */,
+				5FC08B2A663134D8A9B3A5B6517D4BFE /* UIKit */,
 			);
-			name = Frameworks;
+			name = AFNetworking;
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		E2859955FA65B9AA4B967988D390E013 /* Products */ = {
+		DE44AFA5A779EF277C029E64355A1555 /* YYModel */ = {
 			isa = PBXGroup;
 			children = (
-				B14E00B049638B267FFA215D7F6315BA /* Pods_Zequest_Example.framework */,
-				B6F539BB612BCFE0DA27A039D00AAFFD /* Pods_Zequest_Tests.framework */,
-				3939B58668FE68CFE7F631D7F09D2609 /* Zequest.framework */,
+				8BE506D7F4B5DE3B926137F8A9912F29 /* NSObject+YYModel.h */,
+				02439A76002B3F7508C481C892E06756 /* NSObject+YYModel.m */,
+				58C8E3D00696FF1B61096C20F65EECA1 /* YYClassInfo.h */,
+				2A19F12BCD4B0D5DFEC2D5DAB061C67B /* YYClassInfo.m */,
+				6A9F7006A91BF047D09EB36E42212478 /* YYModel.h */,
+				6AEBF0126DFB98835E62B31268E3CEED /* Support Files */,
 			);
-			name = Products;
+			name = YYModel;
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,37 +538,97 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E50296D468C1B2D35AE50DA852A4DF1 /* Headers */ = {
+		26C92065FA704ACB5979728F58796291 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39E1F944FD6FE6D53732ABF5D482874 /* Pods-Zequest_Example-umbrella.h in Headers */,
+				9EDC802A0B91899E1B7AFA75471C9872 /* Pods-Zequest_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86EEF2FE02CBB861BDE84E637B822529 /* Headers */ = {
+		53F08A545EC548B5CC1E4A139611D016 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA72694E5F881E47C956D7AE518D9F4 /* Zequest-umbrella.h in Headers */,
+				5DF73AB935467B39CC1E9FDC22BCEBF8 /* Zequest+Cache.h in Headers */,
+				0996AABB2BC91FD9CF43873767B41EB5 /* Zequest-umbrella.h in Headers */,
+				DFF4A17803715B7CEB32A159C731532D /* Zequest.h in Headers */,
+				672058B57410299248CBDC3BB2DDDB88 /* ZequestPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD327B0E0E3964EFE246AEF1E3934FA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA40AA8CBB6200B48F32ED61B3D071EA /* NSObject+YYModel.h in Headers */,
+				A06F8E2BDB1C1C5627C02E09756BD055 /* YYClassInfo.h in Headers */,
+				905A5BD8B0732532496FAA4BCA58958C /* YYModel-umbrella.h in Headers */,
+				6218AABA7D60EEE58F24657D65595CC1 /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9ECBAE3144164158FDC62D90C3CEFDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE482EF823C5090378A600998A120F9 /* AFAutoPurgingImageCache.h in Headers */,
+				F4352388490E70C1CF187D93E390FB2A /* AFCompatibilityMacros.h in Headers */,
+				C9F701A2E6208D9E840E7A91287F21B9 /* AFHTTPSessionManager.h in Headers */,
+				B4658F8495B18BD4EB5D893CAFF3BBBC /* AFImageDownloader.h in Headers */,
+				722EC0191A173ECB2121618467D32DF4 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				08D5C0606D6FBFB4877FC3C3FF4A2208 /* AFNetworking-umbrella.h in Headers */,
+				D66716504D475B6377F7DD5C7C2BBCDE /* AFNetworking.h in Headers */,
+				163B07BE98EAA270AF0A7AA82F84208E /* AFNetworkReachabilityManager.h in Headers */,
+				AECFCA2598AABAEB044F6C4594F3222F /* AFSecurityPolicy.h in Headers */,
+				2657AB4F1D04803DABFE7DDF80C0EF7F /* AFURLRequestSerialization.h in Headers */,
+				8D060BB549FA8C46C8A5E230C7E00CFE /* AFURLResponseSerialization.h in Headers */,
+				A7E6C236F5C97B35484B553454B609B0 /* AFURLSessionManager.h in Headers */,
+				E8EB9F2CFC54AFE86B618DB528647311 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				40426F061CD9B0B435C690CAFEA2BD00 /* UIButton+AFNetworking.h in Headers */,
+				F191431A32F803DC12F12EF3B4D984BD /* UIImageView+AFNetworking.h in Headers */,
+				4FCA4E8703DBF3D3FB7D5BA06229159D /* UIKit+AFNetworking.h in Headers */,
+				3CA0C9185ED4469D427AA53B26E1B18F /* UIProgressView+AFNetworking.h in Headers */,
+				2AB5C7D99BD529942B2C81AB0CD8A600 /* UIRefreshControl+AFNetworking.h in Headers */,
+				07E08C56386C02093F27CF28E4D01F11 /* WKWebView+AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */ = {
+		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68DA7308EA68B0ACDD3C26C6B5C03D83 /* Build configuration list for PBXNativeTarget "Zequest" */;
+			buildConfigurationList = D4A4B40CB38ADC88749D1E1C8A945364 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
 			buildPhases = (
-				86EEF2FE02CBB861BDE84E637B822529 /* Headers */,
-				A1539439B6801ABB263DEE60FA5107CA /* Sources */,
-				EAC4CB6A45FA02701CCB4FC9ABA1C2C1 /* Frameworks */,
-				EC267A42976A0CA79239A423FF28810D /* Resources */,
+				B9ECBAE3144164158FDC62D90C3CEFDB /* Headers */,
+				6F66130117A5CA2EFE69F1739F512499 /* Sources */,
+				8F9BCCCF510F65077210B8D9944565EC /* Frameworks */,
+				5AAFF4E9A7FD5CC955CC94BDE27FBA95 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0442C964B8574CA3DAA5CC8D76A3D97D /* Build configuration list for PBXNativeTarget "Zequest" */;
+			buildPhases = (
+				53F08A545EC548B5CC1E4A139611D016 /* Headers */,
+				2BD06A7FDD860A6C2C17CD1B6DC94EDE /* Sources */,
+				3C6E7FC659CC8F8252FFE18B3E94C27A /* Frameworks */,
+				952E0BCB85E8B761CD971DDAE247A4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E11381EB33E388F28D82B95D697A50 /* PBXTargetDependency */,
+				025FCEDFDD1AA490FE64B2B12C0F20D7 /* PBXTargetDependency */,
 			);
 			name = Zequest;
 			productName = Zequest;
@@ -273,21 +637,41 @@
 		};
 		7A2541BE0847B24D636ABB3B4661688E /* Pods-Zequest_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A3223AF730A056117B5CBD0A80373B9 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Example" */;
+			buildConfigurationList = CED87094EB162A9BA3EE3174C9D7FEF8 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Example" */;
 			buildPhases = (
-				1E50296D468C1B2D35AE50DA852A4DF1 /* Headers */,
-				5CF9123B4BCE69C498632C40CDF82960 /* Sources */,
-				80CA32AD28D09407E0B90E35E9720541 /* Frameworks */,
-				B2B2DB0690A87EF657FC2E25B9CFA739 /* Resources */,
+				26C92065FA704ACB5979728F58796291 /* Headers */,
+				207EADBE601154F01FEEA2D4843A062E /* Sources */,
+				5F2FFCAD6C20E462A06466CFB53247D3 /* Frameworks */,
+				3A66178E8AE88EACF6A3ABFA742FCB60 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				85305C6FA74916511005A1C1B90B6871 /* PBXTargetDependency */,
+				7C3BE45B1538BC0ED1A1D76104561B11 /* PBXTargetDependency */,
+				5FDA13481B14F6129D714A0BC8C324D4 /* PBXTargetDependency */,
+				8D081A992C12D27E4EE48FA48C136E4A /* PBXTargetDependency */,
 			);
 			name = "Pods-Zequest_Example";
 			productName = "Pods-Zequest_Example";
 			productReference = B14E00B049638B267FFA215D7F6315BA /* Pods_Zequest_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84B44807A12996D487A4A591A481D6A0 /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D70C6AF1A5C6D966A142F163ED5E01 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				AD327B0E0E3964EFE246AEF1E3934FA5 /* Headers */,
+				D07439CA80C4B49DA31C1EAA2BCCDE58 /* Sources */,
+				ADEED147B124BE7EB0C717F29107F404 /* Frameworks */,
+				D0761BC20616D62AF0A9C7411474711E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E2395AEFB33D69FE711741A67317644D /* Pods-Zequest_Tests */ = {
@@ -302,7 +686,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FA88B8419240EB623CB3B675E151155A /* PBXTargetDependency */,
+				11FD11A9F6720B0758415FEF729D3049 /* PBXTargetDependency */,
 			);
 			name = "Pods-Zequest_Tests";
 			productName = "Pods-Zequest_Tests";
@@ -327,19 +711,35 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E2859955FA65B9AA4B967988D390E013 /* Products */;
+			productRefGroup = 695B7FB6250F4A63A2CC1EBB667A4498 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
 				7A2541BE0847B24D636ABB3B4661688E /* Pods-Zequest_Example */,
 				E2395AEFB33D69FE711741A67317644D /* Pods-Zequest_Tests */,
+				84B44807A12996D487A4A591A481D6A0 /* YYModel */,
 				6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B2B2DB0690A87EF657FC2E25B9CFA739 /* Resources */ = {
+		3A66178E8AE88EACF6A3ABFA742FCB60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAFF4E9A7FD5CC955CC94BDE27FBA95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952E0BCB85E8B761CD971DDAE247A4A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,7 +753,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC267A42976A0CA79239A423FF28810D /* Resources */ = {
+		D0761BC20616D62AF0A9C7411474711E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +763,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		207EADBE601154F01FEEA2D4843A062E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945706A2B9446E202A1735BF4AD56B75 /* Pods-Zequest_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD06A7FDD860A6C2C17CD1B6DC94EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9290786DFB86927163C38CB390D32A9E /* Zequest+Cache.m in Sources */,
+				2A4B7AAB7139F4EF42B7459D0EE9DCAD /* Zequest-dummy.m in Sources */,
+				783CFA5C71F35BFD37C4A00E44E470B2 /* Zequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C49086D44915BB9393B07320F0AF500 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,41 +789,142 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CF9123B4BCE69C498632C40CDF82960 /* Sources */ = {
+		6F66130117A5CA2EFE69F1739F512499 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2757DDFE5F6888B17ADA6619C0D5C93 /* Pods-Zequest_Example-dummy.m in Sources */,
+				4992259A954F174FA8BDB394DB1C8F93 /* AFAutoPurgingImageCache.m in Sources */,
+				8CE480485EFF2F15B7A394C90CFF274A /* AFHTTPSessionManager.m in Sources */,
+				B83B1CA17424975882DA1066536E112B /* AFImageDownloader.m in Sources */,
+				9D3A67B86C6A3A1339783953B3E833B9 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				3EB561D79F76C06AA538872D6302D35D /* AFNetworking-dummy.m in Sources */,
+				2E7446308877A2FA6F48A7E545FFB1B1 /* AFNetworkReachabilityManager.m in Sources */,
+				A6DE5A1B478949FE0444318D47C1A9CC /* AFSecurityPolicy.m in Sources */,
+				BBFB85B525E1E77FCB19C84D911205D8 /* AFURLRequestSerialization.m in Sources */,
+				828919193B61FC103B8846F54EF3131C /* AFURLResponseSerialization.m in Sources */,
+				76536A816A576F08FADD3366A2E40094 /* AFURLSessionManager.m in Sources */,
+				FDA522B328C907FBF9B11C64C1A7C624 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				38B57953D8705FA2092852071CD3A462 /* UIButton+AFNetworking.m in Sources */,
+				232B2E8F32708EF2D85000B997FB69A2 /* UIImageView+AFNetworking.m in Sources */,
+				02937E01710489D6668D0C3700E8EADA /* UIProgressView+AFNetworking.m in Sources */,
+				01BEB06B4E262DCEA7A94F4206311BF9 /* UIRefreshControl+AFNetworking.m in Sources */,
+				951B6669114E3C8D2E4961AFE2BB6647 /* WKWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1539439B6801ABB263DEE60FA5107CA /* Sources */ = {
+		D07439CA80C4B49DA31C1EAA2BCCDE58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E3B1AA1B40760AEADDFEEBB26ABF2C /* ReplaceMe.m in Sources */,
-				55D04989192B2FFCB6F5D7951F132F06 /* Zequest-dummy.m in Sources */,
+				4381C0C2775DF318539274584275BCB1 /* NSObject+YYModel.m in Sources */,
+				C29C1BF86EA5C3DBD7AB893ACF8E2B17 /* YYClassInfo.m in Sources */,
+				8DD422F65B364DB9C1EAE655653561A7 /* YYModel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		85305C6FA74916511005A1C1B90B6871 /* PBXTargetDependency */ = {
+		025FCEDFDD1AA490FE64B2B12C0F20D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Zequest;
-			target = 6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */;
-			targetProxy = EDE849C10E2F915ACA6C39D2332F9D96 /* PBXContainerItemProxy */;
+			name = YYModel;
+			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
+			targetProxy = A3319D91C3E5CD8D7C41E25B139BAE40 /* PBXContainerItemProxy */;
 		};
-		FA88B8419240EB623CB3B675E151155A /* PBXTargetDependency */ = {
+		11FD11A9F6720B0758415FEF729D3049 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Zequest_Example";
 			target = 7A2541BE0847B24D636ABB3B4661688E /* Pods-Zequest_Example */;
-			targetProxy = 8BC7E1CDECA95C3E4B9869E4D602509A /* PBXContainerItemProxy */;
+			targetProxy = 29F9B794175FBED3891C35D12B488A3D /* PBXContainerItemProxy */;
+		};
+		20E11381EB33E388F28D82B95D697A50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 1E506F45DB3D597675113DD2839EE2CE /* PBXContainerItemProxy */;
+		};
+		5FDA13481B14F6129D714A0BC8C324D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
+			targetProxy = 130F7DFF323A40543E1C75BB44A0CC50 /* PBXContainerItemProxy */;
+		};
+		7C3BE45B1538BC0ED1A1D76104561B11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 52DF4A5B36F21C94EEFA1869455CC6A7 /* PBXContainerItemProxy */;
+		};
+		8D081A992C12D27E4EE48FA48C136E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zequest;
+			target = 6422E7E1938F4B5D720743DA3AD19D46 /* Zequest */;
+			targetProxy = 82E0ED154F957A7FEFFC8382D19F09D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0C902209175D85304A5115B511928021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B4951323BAE084636A64A93F39C706C /* AFNetworking.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14B48D48C70A71982AC939EE52106523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8B63EAC84B577520DC3E11640D1086 /* AFNetworking.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,9 +991,9 @@
 			};
 			name = Debug;
 		};
-		3B14AF26E6D1BFA01AAD4713F9B9FC79 /* Release */ = {
+		2E7AAD8BAF0DA2D28AA76B430D338893 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 127A6275A3F2394197C0F64F756D6B75 /* Zequest.release.xcconfig */;
+			baseConfigurationReference = 15A372FC7F47897FE872A22153031680 /* Zequest.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -497,11 +1016,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		3DFFAF5959F0B0155881656B9B727588 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -536,11 +1054,10 @@
 			};
 			name = Release;
 		};
-		76447412F8A103F71CDD027165A48D5A /* Release */ = {
+		4789465062ED82C8C2BABE9750EE8584 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C31A86CAD699B5E2068DD8A4119887B9 /* Pods-Zequest_Example.release.xcconfig */;
+			baseConfigurationReference = DEFE0E8F5272097BC4A2F28050D489EA /* YYModel.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -549,19 +1066,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -569,7 +1085,38 @@
 			};
 			name = Release;
 		};
-		85A2F3C2AB768CECFB454B5C14AE6D81 /* Debug */ = {
+		A8EF16F17F962DB37CFE1478468488FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5BFB8CE8B618C51D22ADC583C4F89F /* Zequest.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zequest/Zequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zequest/Zequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zequest/Zequest.modulemap";
+				PRODUCT_MODULE_NAME = Zequest;
+				PRODUCT_NAME = Zequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC41D83AFBFE1F74BC8500C9FC3D8C16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F294596BE0B10BA333C0886EEBB9F5B7 /* Pods-Zequest_Example.debug.xcconfig */;
 			buildSettings = {
@@ -663,9 +1210,9 @@
 			};
 			name = Release;
 		};
-		D618957F17009E86F3C65E1AC1F2D25F /* Debug */ = {
+		D4B21C63FAEAF460B5C7BFFE56969563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7E8B954AAA188301CF0A9027891EE87 /* Zequest.debug.xcconfig */;
+			baseConfigurationReference = 86FFEB9D44962F9951B4D2B948C980FC /* YYModel.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -675,14 +1222,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Zequest/Zequest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Zequest/Zequest-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Zequest/Zequest.modulemap";
-				PRODUCT_MODULE_NAME = Zequest;
-				PRODUCT_NAME = Zequest;
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -725,9 +1272,51 @@
 			};
 			name = Debug;
 		};
+		E39988B891189CCCDEFD6DA1F2756929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31A86CAD699B5E2068DD8A4119887B9 /* Pods-Zequest_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0442C964B8574CA3DAA5CC8D76A3D97D /* Build configuration list for PBXNativeTarget "Zequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7AAD8BAF0DA2D28AA76B430D338893 /* Debug */,
+				A8EF16F17F962DB37CFE1478468488FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -737,20 +1326,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68DA7308EA68B0ACDD3C26C6B5C03D83 /* Build configuration list for PBXNativeTarget "Zequest" */ = {
+		59D70C6AF1A5C6D966A142F163ED5E01 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D618957F17009E86F3C65E1AC1F2D25F /* Debug */,
-				3B14AF26E6D1BFA01AAD4713F9B9FC79 /* Release */,
+				D4B21C63FAEAF460B5C7BFFE56969563 /* Debug */,
+				4789465062ED82C8C2BABE9750EE8584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A3223AF730A056117B5CBD0A80373B9 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Example" */ = {
+		CED87094EB162A9BA3EE3174C9D7FEF8 /* Build configuration list for PBXNativeTarget "Pods-Zequest_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				85A2F3C2AB768CECFB454B5C14AE6D81 /* Debug */,
-				76447412F8A103F71CDD027165A48D5A /* Release */,
+				AC41D83AFBFE1F74BC8500C9FC3D8C16 /* Debug */,
+				E39988B891189CCCDEFD6DA1F2756929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A4B40CB38ADC88749D1E1C8A945364 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C902209175D85304A5115B511928021 /* Debug */,
+				14B48D48C70A71982AC939EE52106523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

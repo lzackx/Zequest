@@ -60,13 +60,13 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		802E939E1667234178F1CF3B /* Pods-Zequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zequest_Tests.release.xcconfig"; path = "Target Support Files/Pods-Zequest_Tests/Pods-Zequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E1BE76EA9F3FC5A3AF8AB87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8E1BE76EA9F3FC5A3AF8AB87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8EF04457B28A327E1EF6D96B /* Pods-Zequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zequest_Example.release.xcconfig"; path = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9048A031E0F4A8E12970613C /* Pods_Zequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0454D32494FFF8613627923 /* Pods-Zequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zequest_Example.debug.xcconfig"; path = "Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A387AF4DD57BA8AC06FDD4C8 /* Pods_Zequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zequest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E38DB3B801F35DC98A3004D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EC7BEE88132564F1E45EF987 /* Zequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Zequest.podspec; path = ../Zequest.podspec; sourceTree = "<group>"; };
+		E38DB3B801F35DC98A3004D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EC7BEE88132564F1E45EF987 /* Zequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Zequest.podspec; path = ../Zequest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				3B32EEA26EC24841DA7CBBEE /* Pods-Zequest_Tests.debug.xcconfig */,
 				802E939E1667234178F1CF3B /* Pods-Zequest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Zequest_Example/Pods-Zequest_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 				"${BUILT_PRODUCTS_DIR}/Zequest/Zequest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zequest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
