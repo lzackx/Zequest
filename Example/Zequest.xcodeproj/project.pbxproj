@@ -498,6 +498,7 @@
 			baseConfigurationReference = A0454D32494FFF8613627923 /* Pods-Zequest_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_ARCHS = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zequest/Zequest-Prefix.pch";
 				INFOPLIST_FILE = "Zequest/Zequest-Info.plist";
@@ -515,6 +516,7 @@
 			baseConfigurationReference = 8EF04457B28A327E1EF6D96B /* Pods-Zequest_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_ARCHS = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zequest/Zequest-Prefix.pch";
 				INFOPLIST_FILE = "Zequest/Zequest-Info.plist";
