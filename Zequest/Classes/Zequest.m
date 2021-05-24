@@ -105,6 +105,13 @@ static Zequest *_shared = nil;
 	self.commonAcceptableStatusCodes = acceptableStatusCodes;
 }
 
+- (void)registerCommonRequestTaskDidFinishCollectingMetricsBlock:(void(^)(NSURLSession *session, NSURLSessionTask *task, NSURLSessionTaskMetrics * metrics))requestTaskDidFinishCollectingMetricsBlock {
+	if (requestTaskDidFinishCollectingMetricsBlock == nil) {
+		return;
+	}
+	self.commonRequestTaskDidFinishCollectingMetrics = requestTaskDidFinishCollectingMetricsBlock;
+}
+
 - (void)registerCommonRequestTaskDidCompleteBlock:(void (^)(NSURLSession *session, NSURLSessionTask *task, NSError *error))requestTaskDidCompleteBlock {
 	if (requestTaskDidCompleteBlock == nil) {
 		return;
@@ -125,6 +132,7 @@ static Zequest *_shared = nil;
 	self.commonHTTPSessionManager.responseSerializer = [self defaultCommonResponseSerializer];
 	self.commonHTTPSessionManager.responseSerializer.acceptableStatusCodes = self.commonAcceptableStatusCodes;
 	self.commonHTTPSessionManager.operationQueue.maxConcurrentOperationCount = self.maxConcurrentOperationCount;
+	[self.commonHTTPSessionManager setTaskDidFinishCollectingMetricsBlock:self.commonRequestTaskDidFinishCollectingMetrics];
 	[self.commonHTTPSessionManager setTaskDidCompleteBlock:self.commonRequestTaskDidComplete];
 }
 

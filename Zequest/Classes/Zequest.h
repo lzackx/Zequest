@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)registerCommonBodyParameters:(NSDictionary *)commonBodyParameters;
 - (void)registerCommonRequestTimeoutInterval:(NSTimeInterval)requestTimeoutInterval;
 - (void)registerCommonResponseAcceptableStatusCodes:(NSIndexSet *)acceptableStatusCodes;
+- (void)registerCommonRequestTaskDidFinishCollectingMetricsBlock:(nullable void(^)(NSURLSession *session, NSURLSessionTask *task, NSURLSessionTaskMetrics * metrics))requestTaskDidFinishCollectingMetricsBlock;
 - (void)registerCommonRequestTaskDidCompleteBlock:(nullable void (^)(NSURLSession *session, NSURLSessionTask *task, NSError * _Nullable error))requestTaskDidCompleteBlock;
 
 // MARK: - Customized Common Manager
