@@ -14,11 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 
 // MARK: - Parameters
-- (void)registerCommonBodyParameters:(NSDictionary *)commonBodyParameters;
+- (void)registerCommonRequestMaxConcurrentOperationCount:(NSInteger)maxConcurrentOperationCount;
 - (void)registerCommonHeaderParameters:(NSDictionary *)commonHeaderParameters;
+- (void)registerCommonBodyParameters:(NSDictionary *)commonBodyParameters;
 - (void)registerCommonRequestTimeoutInterval:(NSTimeInterval)requestTimeoutInterval;
 - (void)registerCommonResponseAcceptableStatusCodes:(NSIndexSet *)acceptableStatusCodes;
-- (void)registerCommonRequestMaxConcurrentOperationCount:(NSInteger)maxConcurrentOperationCount;
 - (void)registerCommonRequestTaskDidCompleteBlock:(nullable void (^)(NSURLSession *session, NSURLSessionTask *task, NSError * _Nullable error))requestTaskDidCompleteBlock;
 
 // MARK: - Customized Common Manager
@@ -41,10 +41,10 @@ shouldCache:(BOOL)shouldCache
 	  header:(NSDictionary *)header
   parameters:(NSDictionary *)parameters
  shouldCache:(BOOL)shouldCache
-   dataClass:(Class)dataClass
-	progress:(void (^)(NSProgress * _Nonnull))progress
-	 success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-	 failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure;
+   dataClass:(nullable Class)dataClass
+	progress:(nullable void (^)(NSProgress * _Nonnull))progress
+	 success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+	 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure;
 
 // MARK: - Cache
 - (NSString *)cachedResponseFor:(NSString *)url;

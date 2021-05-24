@@ -8,7 +8,7 @@
 #import "Zequest.h"
 #import "ZequestPrivate.h"
 #import "Zequest+Cache.h"
-#import <YYModel/YYModel.h>
+#import <YYKit/NSObject+YYModel.h>
 
 @implementation Zequest
 
@@ -70,29 +70,45 @@ static Zequest *_shared = nil;
 	return serializer;
 }
 
+- (void)registerCommonRequestMaxConcurrentOperationCount:(NSInteger)maxConcurrentOperationCount {
+	if (maxConcurrentOperationCount <= 0) {
+		return;
+	}
+	self.maxConcurrentOperationCount = maxConcurrentOperationCount;
+}
+
 - (void)registerCommonHeaderParameters:(NSDictionary *)commonHeaderParameters {
+	if (commonHeaderParameters == nil) {
+		return;
+	}
 	self.commonHeaderParameters = commonHeaderParameters;
 }
 
 - (void)registerCommonBodyParameters:(NSDictionary *)commonBodyParameters {
+	if (commonBodyParameters == nil) {
+		return;
+	}
 	self.commonBodyParameters = commonBodyParameters;
 }
 
 - (void)registerCommonRequestTimeoutInterval:(NSTimeInterval)requestTimeoutInterval {
+	if (requestTimeoutInterval <= 0) {
+		return;
+	}
 	self.commonRequestTimeoutInterval = requestTimeoutInterval;
-	self.commonHTTPSessionManager.requestSerializer.timeoutInterval = self.commonRequestTimeoutInterval;
-}
-
-- (void)registerCommonRequestMaxConcurrentOperationCount:(NSInteger)maxConcurrentOperationCount {
-	self.maxConcurrentOperationCount = maxConcurrentOperationCount;
 }
 
 - (void)registerCommonResponseAcceptableStatusCodes:(NSIndexSet *)acceptableStatusCodes {
+	if (acceptableStatusCodes == nil) {
+		return;
+	}
 	self.commonAcceptableStatusCodes = acceptableStatusCodes;
-	self.commonHTTPSessionManager.responseSerializer.acceptableStatusCodes = self.commonAcceptableStatusCodes;
 }
 
 - (void)registerCommonRequestTaskDidCompleteBlock:(void (^)(NSURLSession *session, NSURLSessionTask *task, NSError *error))requestTaskDidCompleteBlock {
+	if (requestTaskDidCompleteBlock == nil) {
+		return;
+	}
 	self.commonRequestTaskDidComplete = requestTaskDidCompleteBlock;
 }
 
@@ -105,13 +121,15 @@ static Zequest *_shared = nil;
 	configuration.URLCache = nil;
 	self.commonHTTPSessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
 	self.commonHTTPSessionManager.requestSerializer = [self defaultCommonRequestSerializer];
+	self.commonHTTPSessionManager.requestSerializer.timeoutInterval = self.commonRequestTimeoutInterval;
 	self.commonHTTPSessionManager.responseSerializer = [self defaultCommonResponseSerializer];
+	self.commonHTTPSessionManager.responseSerializer.acceptableStatusCodes = self.commonAcceptableStatusCodes;
 	self.commonHTTPSessionManager.operationQueue.maxConcurrentOperationCount = self.maxConcurrentOperationCount;
 	[self.commonHTTPSessionManager setTaskDidCompleteBlock:self.commonRequestTaskDidComplete];
 }
 
 // MARK: - Reachability
-- (void)launchReachabilityManagerWithDomain:(NSString *)domain
+- (void)launchReachabilityManagerWithDomain:(nullable NSString *)domain
 					   statusChangeCallback:(nullable void (^)(NSInteger status))statusChangeCallback {
 	if (self.commonReachabilityManager != nil) {
 		[self.commonReachabilityManager stopMonitoring];
@@ -131,10 +149,10 @@ static Zequest *_shared = nil;
 	 header:(NSDictionary *)header
  parameters:(NSDictionary *)parameters
 shouldCache:(BOOL)shouldCache
-  dataClass:(Class)dataClass
-   progress:(void (^)(NSProgress * _Nonnull))progress
-	success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-	failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure  {
+  dataClass:(nullable Class)dataClass
+   progress:(nullable void (^)(NSProgress * _Nonnull))progress
+	success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+	failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure  {
 	// Header
 	NSMutableDictionary *h = [NSMutableDictionary dictionaryWithDictionary:self.commonHeaderParameters];
 	[h addEntriesFromDictionary:header];
@@ -152,7 +170,7 @@ shouldCache:(BOOL)shouldCache
 			[wSelf cacheURL:task.currentRequest.URL.absoluteString cachedResponse:jsonString];
 		}
 		if (dataClass != nil) {
-			id dataModel = [dataClass yy_modelWithJSON:jsonObject];
+			id dataModel = [dataClass modelWithDictionary:jsonObject];
 			if (dataModel != nil) {
 				success(task, dataModel);
 				return;
@@ -178,10 +196,10 @@ shouldCache:(BOOL)shouldCache
 	  header:(NSDictionary *)header
   parameters:(NSDictionary *)parameters
  shouldCache:(BOOL)shouldCache
-   dataClass:(Class)dataClass
-	progress:(void (^)(NSProgress * _Nonnull))progress
-	 success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-	 failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure {
+   dataClass:(nullable Class)dataClass
+	progress:(nullable void (^)(NSProgress * _Nonnull))progress
+	 success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+	 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure {
 	// Header
 	NSMutableDictionary *h = [NSMutableDictionary dictionaryWithDictionary:self.commonHeaderParameters];
 	[h addEntriesFromDictionary:header];
@@ -199,7 +217,7 @@ shouldCache:(BOOL)shouldCache
 			[wSelf cacheURL:task.currentRequest.URL.absoluteString cachedResponse:jsonString];
 		}
 		if (dataClass != nil) {
-			id dataModel = [dataClass yy_modelWithJSON:jsonObject];
+			id dataModel = [dataClass modelWithDictionary:jsonObject];
 			if (dataModel != nil) {
 				success(task, dataModel);
 				return;

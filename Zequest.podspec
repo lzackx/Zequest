@@ -48,5 +48,5 @@ A common request tool
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking'
-  s.dependency 'YYModel'
+  s.dependency 'YYKit'
 end
