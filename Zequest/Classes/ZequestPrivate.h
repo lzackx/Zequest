@@ -9,12 +9,13 @@
 #define ZequestPrivate_h
 
 #import <AFNetworking/AFNetworking.h>
+#import <YYCache/YYCache.h>
 
 
 #define ZEQUEST_CACHE_NAME		@"com.lzackx.zequest.cache"
 #define ZEQUEST_CACHE_DIRECTORY_NAME		@"ZequestCache"
 
-@interface Zequest () <NSCacheDelegate>
+@interface Zequest ()
 
 @property (nonatomic, readwrite, strong) AFNetworkReachabilityManager *commonReachabilityManager;
 @property (nonatomic, readwrite, strong) AFHTTPSessionManager *commonHTTPSessionManager;
@@ -27,7 +28,8 @@
 @property (nonatomic, readwrite, copy) void(^commonRequestTaskDidFinishCollectingMetrics)(NSURLSession *session, NSURLSessionTask *task, NSURLSessionTaskMetrics * metrics);
 @property (nonatomic, readwrite, copy) void(^commonRequestTaskDidComplete)(NSURLSession *session, NSURLSessionTask *task, NSError *error);
 
-@property (nonatomic, readwrite, strong) NSCache<NSString *, NSString *> *commonCache;
+//@property (nonatomic, readwrite, strong) NSCache<NSString *, NSString *> *commonCache;
+@property (nonatomic, readwrite, strong) YYCache *commonCache;
 @property (nonatomic, readwrite, strong) NSOperationQueue *cacheQueue;
 
 @end

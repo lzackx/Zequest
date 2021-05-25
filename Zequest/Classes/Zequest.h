@@ -34,21 +34,14 @@ NS_ASSUME_NONNULL_BEGIN
 shouldCache:(BOOL)shouldCache
   dataClass:(nullable Class)dataClass
    progress:(nullable void (^)(NSProgress * _Nonnull))downloadProgress
-	success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-	failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure;
-
-
-- (void)post:(NSString *)url
-	  header:(NSDictionary *)header
-  parameters:(NSDictionary *)parameters
- shouldCache:(BOOL)shouldCache
-   dataClass:(nullable Class)dataClass
-	progress:(nullable void (^)(NSProgress * _Nonnull))progress
-	 success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-	 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure;
+	success:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable jsonObject))success
+	failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure;
 
 // MARK: - Cache
-- (NSString *)cachedResponseFor:(NSString *)url;
+- (void)cachedResponseForURL:(NSString *)url
+				   dataClass:(nullable Class)dataClass
+					 success:(nullable void (^)(NSString * _Nullable jsonObject))success
+					 failure:(nullable void (^)(NSError * _Nonnull error))failure;
 
 @end
 

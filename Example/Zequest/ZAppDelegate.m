@@ -30,7 +30,8 @@
 		NSLog(@"Reachability Status: %ld", status);
 	}];
 	[[Zequest shared] launchCommonHTTPSessionManager];
-	[[Zequest shared] get:@"https://raw.githubusercontent.com/lzackx/Zequest/master/Example/zequest.json"
+	NSString *url = @"https://raw.githubusercontent.com/lzackx/Zequest/master/Example/zequest.json";
+	[[Zequest shared] get:url
 				   header:@{
 					   @"header": @"zequest"
 				   }
@@ -45,6 +46,12 @@
 		NSLog(@"%@: %@", task, object);
 	} failure:^(NSURLSessionDataTask * task, NSError * error) {
 		NSLog(@"%@: %@", task, error);
+	}];
+	
+	[[Zequest shared] cachedResponseForURL:url dataClass:nil success:^(NSString * _Nullable jsonObject) {
+		NSLog(@"%@", jsonObject);
+	} failure:^(NSError * _Nonnull error) {
+		NSLog(@"%@", error);
 	}];
 	
     return YES;

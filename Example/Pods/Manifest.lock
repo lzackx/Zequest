@@ -14,12 +14,12 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
   - Zequest (1.0.0):
     - AFNetworking
-    - YYKit
+    - YYCache
+    - YYModel
 
 DEPENDENCIES:
   - Zequest (from `../`)
@@ -27,7 +27,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - YYKit
+    - YYCache
+    - YYModel
 
 EXTERNAL SOURCES:
   Zequest:
@@ -35,8 +36,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
-  Zequest: 4bccaec731dbcfd3818a35c3d2347d2a18c16c57
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  Zequest: 1b3fd526f0c2feb7ad137751dda651b02c92873f
 
 PODFILE CHECKSUM: eba7964a82791d17cf15ca978e9d483e2605e81a
 

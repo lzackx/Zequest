@@ -8,7 +8,7 @@
 #import "Zequest.h"
 #import "ZequestPrivate.h"
 #import "Zequest+Cache.h"
-#import <YYKit/NSObject+YYModel.h>
+#import <YYModel/YYModel.h>
 
 @implementation Zequest
 
@@ -46,9 +46,15 @@ static Zequest *_shared = nil;
 		_commonRequestTimeoutInterval = 8.0;
 		_commonAcceptableStatusCodes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(200, 100)];
 		_commonRequestTaskDidComplete = nil;
-		_commonCache = [[NSCache alloc] init];
-		_commonCache.name = ZEQUEST_CACHE_NAME;
-		_commonCache.delegate = self;
+		_commonCache = [YYCache cacheWithPath:[Zequest pathForCachesDirectory]];
+		_commonCache.diskCache.customArchiveBlock = ^NSData * _Nonnull(NSString * _Nonnull object) {
+			NSData *data = [object dataUsingEncoding:NSUTF8StringEncoding];
+			return data;
+		};
+		_commonCache.diskCache.customUnarchiveBlock = ^NSString * _Nonnull(NSData * _Nonnull data) {
+			NSString *d = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+			return d;
+		};
 		_cacheQueue = [[NSOperationQueue alloc] init];
 		_cacheQueue.maxConcurrentOperationCount = 1;
 		_cacheQueue.name = ZEQUEST_CACHE_NAME;
@@ -159,8 +165,8 @@ static Zequest *_shared = nil;
 shouldCache:(BOOL)shouldCache
   dataClass:(nullable Class)dataClass
    progress:(nullable void (^)(NSProgress * _Nonnull))progress
-	success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-	failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure  {
+	success:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable jsonObject))success
+	failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure  {
 	// Header
 	NSMutableDictionary *h = [NSMutableDictionary dictionaryWithDictionary:self.commonHeaderParameters];
 	[h addEntriesFromDictionary:header];
@@ -178,7 +184,7 @@ shouldCache:(BOOL)shouldCache
 			[wSelf cacheURL:task.currentRequest.URL.absoluteString cachedResponse:jsonString];
 		}
 		if (dataClass != nil) {
-			id dataModel = [dataClass modelWithDictionary:jsonObject];
+			id dataModel = [dataClass yy_modelWithJSON:jsonObject];
 			if (dataModel != nil) {
 				success(task, dataModel);
 				return;
@@ -206,8 +212,8 @@ shouldCache:(BOOL)shouldCache
  shouldCache:(BOOL)shouldCache
    dataClass:(nullable Class)dataClass
 	progress:(nullable void (^)(NSProgress * _Nonnull))progress
-	 success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-	 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure {
+	 success:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable jsonObject))success
+	 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure {
 	// Header
 	NSMutableDictionary *h = [NSMutableDictionary dictionaryWithDictionary:self.commonHeaderParameters];
 	[h addEntriesFromDictionary:header];
@@ -225,7 +231,7 @@ shouldCache:(BOOL)shouldCache
 			[wSelf cacheURL:task.currentRequest.URL.absoluteString cachedResponse:jsonString];
 		}
 		if (dataClass != nil) {
-			id dataModel = [dataClass modelWithDictionary:jsonObject];
+			id dataModel = [dataClass yy_modelWithJSON:jsonObject];
 			if (dataModel != nil) {
 				success(task, dataModel);
 				return;
@@ -247,16 +253,29 @@ shouldCache:(BOOL)shouldCache
 								failure:failureCallback];
 }
 
-- (NSString *)cachedResponseFor:(NSString *)url {
+- (void)cachedResponseForURL:(NSString *)url
+				   dataClass:(nullable Class)dataClass
+					 success:(nullable void (^)(NSString * _Nullable jsonObject))success
+					 failure:(nullable void (^)(NSError * _Nonnull error))failure {
 	NSString *cachedResponse = [self getCachedResponseWithURL:url];
-	return cachedResponse;
-}
-
-// MARK: - NSCacheDelegate
-- (void)cache:(NSCache *)cache willEvictObject:(id)obj {
-#ifdef DEBUG
-	NSLog(@"[Zequest] cache willEvictObject: %@", obj);
-#endif
+	if (cachedResponse.length > 0) {
+		if (success) {
+			if (dataClass != nil) {
+				id dataModel = [dataClass yy_modelWithJSON:cachedResponse];
+				if (dataModel != nil) {
+					success(dataModel);
+					return;
+				}
+			} else {
+				success(cachedResponse);
+			}
+		}
+	} else {
+		if (failure) {
+			NSError *error = [NSError errorWithDomain:@"NSURLErrorBadURL" code:NSURLErrorBadURL userInfo:nil];
+			failure(error);
+		}
+	}
 }
 
 @end
