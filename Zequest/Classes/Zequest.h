@@ -37,6 +37,15 @@ shouldCache:(BOOL)shouldCache
 	success:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable jsonObject))success
 	failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure;
 
+- (void)post:(NSString *)url
+	  header:(NSDictionary *)header
+  parameters:(NSDictionary *)parameters
+ shouldCache:(BOOL)shouldCache
+   dataClass:(nullable Class)dataClass
+	progress:(nullable void (^)(NSProgress * _Nonnull))progress
+	 success:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable jsonObject))success
+	 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure;
+
 // MARK: - Cache
 - (void)cachedResponseForURL:(NSString *)url
 				   dataClass:(nullable Class)dataClass
