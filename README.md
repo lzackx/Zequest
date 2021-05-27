@@ -1,6 +1,6 @@
 # Zequest
 
-[![Build Status](https://travis-ci.com/lzackx/Zequest.svg?branch=master)](https://travis-ci.org/lzackx/Zequest)
+[![Build Status](https://github.com/lzackx/Zequest/actions/workflows/ci.yml/badge.svg)](https://github.com/lzackx/Zequest/actions)
 [![Version](https://img.shields.io/cocoapods/v/Zequest.svg?style=flat)](https://cocoapods.org/pods/Zequest)
 [![License](https://img.shields.io/cocoapods/l/Zequest.svg?style=flat)](https://cocoapods.org/pods/Zequest)
 [![Platform](https://img.shields.io/cocoapods/p/Zequest.svg?style=flat)](https://cocoapods.org/pods/Zequest)
